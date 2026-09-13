@@ -1,6 +1,8 @@
-﻿namespace StayBnB_Web_Application_v2.Models
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace StayBnB_Web_Application_v2.Models
 {
-    public class ApplicationUser
+    public class ApplicationUser : IdentityUser
     {
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
