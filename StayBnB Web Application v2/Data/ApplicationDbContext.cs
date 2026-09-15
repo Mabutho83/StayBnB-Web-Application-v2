@@ -4,7 +4,7 @@ using StayBnB_Web_Application_v2.Models;
 
 namespace StayBnB_Web_Application_v2.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
